@@ -26,7 +26,10 @@ Common operations on a linked list include:
 */
 
 
-
+struct node{
+         int num;
+	 struct node* next;
+} 
 
 
 
