@@ -45,5 +45,6 @@ struct node* delete_end();
 
 linked_list* create_ll(){
        linked_list* ll = malloc(sizeof(linked_list));
+       return ll;
 }
 
