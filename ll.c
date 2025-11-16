@@ -37,12 +37,12 @@ typedef struct linked_list{
 }linked_list;
 
 
-struct node* create_ll();
+linked_list* create_ll();
 struct node* delete_begin();
 struct node* insert_middle();
 struct node* delete_end();
 
-struct node* create_ll(){
+linked_list* create_ll(){
        struct node* begin = malloc(sizeof(node));
        struct linked_list = malloc(sizeof(linked_list));
 }
