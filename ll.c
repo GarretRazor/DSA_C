@@ -43,9 +43,7 @@ struct node* delete_begin();
 struct node* insert_middle();
 struct node* delete_end();
 
-linked_list* create_ll(int num){
-       struct node* begin = malloc(sizeof(node));
+linked_list* create_ll(){
        linked_list* ll = malloc(sizeof(linked_list));
-
 }
 
