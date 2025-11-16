@@ -24,16 +24,25 @@ Common operations on a linked list include:
     Merging:
     Two separate linked lists can be combined into a single linked list.
 */
-
+#include<stdlib.h>
 
 struct node{
          int num;
 	 struct node* next;
 } 
-
+struct linked_list{
+	struct node* next; 
+	struct node* previous;
+}
 
 
 struct node* create_ll();
 struct node* delete_begin();
 struct node* insert_middle();
 struct node* delete_end();
+
+struct node* create_ll(){
+       struct node* begin = malloc(sizeof(node));
+       struct linked_list = malloc(sizeof(linked_list));
+}
+
