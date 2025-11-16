@@ -26,14 +26,15 @@ Common operations on a linked list include:
 */
 #include<stdlib.h>
 
-struct node{
+typedef struct node{
          int num;
 	 struct node* next;
-} 
-struct linked_list{
+} node;
+
+typedef struct linked_list{
 	struct node* next; 
 	struct node* previous;
-}
+}linked_list;
 
 
 struct node* create_ll();
