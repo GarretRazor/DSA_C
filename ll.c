@@ -47,4 +47,7 @@ linked_list* create_ll(){
        linked_list* ll = malloc(sizeof(linked_list));
        return ll;
 }
+initialize_ll(linked_list* ll)
+{
 
+}
