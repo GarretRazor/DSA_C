@@ -32,8 +32,7 @@ typedef struct node{
 } node;
 
 typedef struct linked_list{
-	struct node* next; 
-	struct node* previous;
+	struct node* head;
 }linked_list;
 
 
