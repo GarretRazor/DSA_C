@@ -33,6 +33,7 @@ typedef struct node{
 
 typedef struct linked_list{
 	struct node* head;
+	struct node* tail;
 }linked_list;
 
 
