@@ -51,4 +51,7 @@ initialize_ll(linked_list* ll)
 {
       if(ll == NULL)
 	return;
+      ll->head = ll->tail;
+
+
 }
