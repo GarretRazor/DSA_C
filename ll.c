@@ -49,5 +49,6 @@ linked_list* create_ll(){
 }
 initialize_ll(linked_list* ll)
 {
-
+      if(ll == NULL)
+	return;
 }
