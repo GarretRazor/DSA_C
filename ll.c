@@ -57,4 +57,15 @@ void initialize_ll(linked_list* ll)
       ll->tail = NULL;
 
 }
-
+linked_list* create_node(int num, linked_list* ll)
+{
+	if(ll->head == NULL)
+	{
+		ll->head = malloc(sizeof(node));
+		ll->tail = head;
+	}
+	ll->tail = malloc(sizeof(node));
+        ll->tail->num = num;
+        return ll;
+}	
+	
