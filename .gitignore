@@ -1,0 +1,33 @@
+# Compiled object files
+*.o
+*.lo
+*.la
+*.al
+
+# Executables
+a.out
+*.out
+*.exe
+
+# Libraries
+*.so
+*.so.*
+*.a
+*.lib
+
+# Debug / profiling files
+*.gch
+*.gcno
+*.gcda
+*.gcov
+
+# Build directories
+/build/
+/bin/
+/obj/
+
+# Editor/OS artifacts
+*~
+*.swp
+.DS_Store
+
