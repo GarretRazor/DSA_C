@@ -46,7 +46,7 @@ linked_list* create_node(int num, linked_list* ll);
 linked_list* create_ll(){
        linked_list* ll = malloc(sizeof(linked_list));
       
-       memset(ll, 0,sizeof(ll));
+       memset(ll, 0,sizeof(*ll));
        return ll;
 }
 void initialize_ll(linked_list* ll)
