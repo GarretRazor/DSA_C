@@ -25,7 +25,7 @@ Common operations on a linked list include:
     Two separate linked lists can be combined into a single linked list.
 */
 #include<stdlib.h>
-
+#include<string.h>
 typedef struct node{
          int num;
 	 struct node* next;
