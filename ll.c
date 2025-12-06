@@ -39,7 +39,9 @@ typedef struct linked_list{
 
 linked_list* create_ll();
 void initialize_ll(linked_list* ll);
+int append_tail(node* node, linked_list* ll);
 node* create_node();
+
 linked_list* create_ll(){
        linked_list* ll = malloc(sizeof(linked_list));
       
@@ -59,4 +61,9 @@ node* create_node()
    node* new_node = malloc(sizeof(node));
    return node;	
 }	
-	
+int append_tail(node* node, linked_list* ll)
+{
+     ll->tail = node;
+     ll->head = ll->tail;
+     return 0; 
+}     
