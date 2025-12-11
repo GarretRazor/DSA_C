@@ -56,21 +56,22 @@ void initialize_ll(linked_list* ll)
       ll->tail = NULL;
 
 }
-node* create_node()
+node* create_node(int num)
 {  
    node* new_node = malloc(sizeof(node));
-   return node;	
+   new_node->num = num; 
+   return new_node;	
 }	
 int append_tail(node* node, linked_list* ll)
-{
+{    //Check if list is empty and then point the list head to the tail. 
      if(ll->head == NULL)
      {
 	ll->tail = node;
         ll->head = node; 
      }
      else{ 
-	ll->tail->next = node; 
-	ll->item = node;
-} 
-     return 0; 
-}     
+	ll->tail->next = node;
+	ll->head = ll->tail->next; 
+     } 
+}    
+
