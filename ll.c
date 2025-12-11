@@ -63,7 +63,14 @@ node* create_node()
 }	
 int append_tail(node* node, linked_list* ll)
 {
-     ll->tail = node;
-     ll->head = ll->tail;
+     if(ll->head == NULL)
+     {
+	ll->tail = node;
+        ll->head = node; 
+     }
+     else{ 
+	ll->tail->next = node; 
+	ll->item = node;
+} 
      return 0; 
 }     
