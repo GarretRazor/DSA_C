@@ -12,8 +12,8 @@ int main(){
         two.data = 2;
 	three.data = 3;
       	
-	one.next = &node_two;
-	two.next = &node_three;
+	one.next = &two;
+	two.next = &three;
 	three.next = NULL; 
         
 	node temp = one;
@@ -22,7 +22,8 @@ int main(){
 	{   
 	    int node_count = 1;
 	    printf("Node %d has data %d", node_count, temp.data); 
-	    node_count++; 
+	    node_count++;
+	    temp = temp.next; 
 	} 
 	    
 } 
