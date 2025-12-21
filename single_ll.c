@@ -16,14 +16,14 @@ int main(){
 	two.next = &three;
 	three.next = NULL; 
         
-	node temp = one;
+	node* temp = &one;
 
-	while(temp.next != NULL) 
+	while(temp->next != NULL) 
 	{   
 	    int node_count = 1;
-	    printf("Node %d has data %d", node_count, temp.data); 
+	    printf("Node %d has data %d", node_count, temp->data); 
 	    node_count++;
-	    temp = temp.next; 
+	    temp = temp->next; 
 	} 
 	    
 } 
